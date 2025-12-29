@@ -22,7 +22,7 @@ if foto:
     st.image(img, caption="Foto Original capturada")
     
     with st.spinner('IA analisando e corrigindo pixels para 4K...'):
-        model = genai.GenerativeModel('gemini-pro-vision')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         
         # O comando focado em melhorar a imagem e ajeitar o borrão
         comando = """
